@@ -39,6 +39,33 @@
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<!-- Здесь будет форма -->
+			<form class="filters" action="#" method="GET">
+				<fieldset> 
+					<legend class="">Производители</legend>
+					<input type="checkbox">		
+					<input type="checkbox">		
+					<input type="checkbox">		
+					<input type="checkbox">		
+					<input type="checkbox">		
+					<input type="checkbox">
+				</fieldset>
+				<fieldset>
+					<legend class="">Группы товаров</legend>
+					<label>
+						<input type="radio" name="product-group-1" value="shaving-accessories">
+						Бритвенные принадлежности
+					</label>
+					<label>
+						<input type="radio" name="product-group-2" value="care-products">
+						Средства для ухода
+					</label>
+					<label>
+						<input type="radio" name="product-group-3" value="accessories">
+						Аксессуары
+					</label>
+				</fieldset>
+				<input type="submit" value="Показать">
+			</form>
 		</section>
 
 		<section class="catalog">

@@ -89,7 +89,21 @@
 		<section class="appointment">
 			<h2>Записаться</h2>
 			<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-			<!-- Здесь будет форма -->
+			<form class="booking" action="#" method="GET">
+				<label> Дата
+					<input type="date" name="date" placeholder="08.10.2017">
+				</label>
+				<label> Время
+					<input type="time" name="time" placeholder="10:00">
+				</label>
+				<label> Ваше имя
+					<input type="text" name="name" placeholder="Борода">
+				</label>
+				<label> Телефон
+					<input type="tel" name="tel" placeholder="+7 123 456-78-90" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+				</label>
+					<input type="submit" value="Отправить">
+			</form>
 		</section>
 	</main>
 
@@ -120,7 +134,15 @@
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль.</p>
-		<!-- Здесь будет форма -->
+		<form class="login-form" action="#" method="GET">
+			<input type="text" name="login" placeholder="Логин">
+			<input type="password" name="password" placeholder="Пароль">
+			<input type="checkbox" value="Запомните меня" checked>
+			<p class="lost-password">
+				<a href="#">Я забыл пароль!</a>
+			</p>
+			<input type="submit" value="Войти">
+		</form>
 		<span class="modal-close">
 			<img src="img/cross.svg">
 		</span>
