@@ -22,7 +22,9 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="login-link">Вход</li>
+				<li class="login-link">
+					<a class="login-link" href="login.html">Вход</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -67,8 +69,8 @@
 			<figure class="gallery-content">
 				<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
 			</figure>
-			<span class="button gallery-button-back"></span>
-			<span class="button gallery-button-next"></span>
+			<button class="button gallery-button gallery-button-back" type="button"></button>
+			<button class="button gallery-button gallery-button-next" type="button"></button>
 		</section>
 
 		<section class="contacts">
@@ -89,20 +91,27 @@
 		<section class="appointment">
 			<h2>Записаться</h2>
 			<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-			<form class="booking" action="#" method="GET">
-				<label> Дата
-					<input type="date" name="date" placeholder="08.10.2017">
-				</label>
-				<label> Время
-					<input type="time" name="time" placeholder="10:00">
-				</label>
-				<label> Ваше имя
-					<input type="text" name="name" placeholder="Борода">
-				</label>
-				<label> Телефон
-					<input type="tel" name="tel" placeholder="+7 123 456-78-90" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-				</label>
-					<input type="submit" value="Отправить">
+			<form class="appointment-form" action="#" method="post">
+				<p class="appointment-item">
+					<label for="appointment-date"></label>Дата
+					<input id="appointment-date" type="text" name="date" placeholder="08.10.2017">
+				</p>					
+					
+				<p class="appointment-item">
+					<label for="appointment-time"></label>Время
+					<input id="appointment-time" type="text" name="time" placeholder="10:00">
+				</p>
+					
+				<p class="appointment-item">
+					<label for="appointment-name"></label>Ваше имя
+					<input id="appointment-text" type="text" name="name" placeholder="Борода">
+				</p>
+					
+				<p class="appointment-item">
+					<label for="appointment-phone"></label>Телефон
+					<input id="appointment-tel" type="tel" name="phone" placeholder="+7 123 456-78-90" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+				</p>	
+				<button type="submit" value="Отправить">
 			</form>
 		</section>
 	</main>
@@ -134,25 +143,37 @@
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль.</p>
-		<form class="login-form" action="#" method="GET">
-			<input type="text" name="login" placeholder="Логин">
-			<input type="password" name="password" placeholder="Пароль">
-			<input type="checkbox" value="Запомните меня" checked>
-			<p class="lost-password">
-				<a href="#">Я забыл пароль!</a>
+		<form class="login-form" action="#" method="post">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
 			</p>
-			<input type="submit" value="Войти">
+			<p>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Пароль">
+			</p>		
+			<p class="login-password-info"></p>
+				<label class="login-checkbox">
+					<input class="visually-hidden" type="checkbox" name="remember" checked>
+					<span class="checkbox-indicator"></span>
+					Запомните меня
+				</label>
+					
+				<a class="restore" href="#">Я забыл пароль!</a>
+			</p>
+			<button class="button" type="submit">Войти</button>
 		</form>
-		<span class="modal-close">
-			<img src="img/cross.svg">
-		</span>
+		<button class="modal-close" type="button">
+			Закрыть
+		</button>
 	</section>
 	  
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<span class="modal-close">
-			<img src="img/cross.svg">
-		</span>
+		<p>
+			<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+		</p>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 </body>
 </html>
