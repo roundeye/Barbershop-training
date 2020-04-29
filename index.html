@@ -94,22 +94,22 @@
 			<form class="appointment-form" action="#" method="post">
 				<p class="appointment-item">
 					<label for="appointment-date"></label>Дата
-					<input id="appointment-date" type="text" name="date" placeholder="08.10.2017">
+					<input type="text" name="date" placeholder="08.10.2017" id="appointment-date">
 				</p>					
 					
 				<p class="appointment-item">
 					<label for="appointment-time"></label>Время
-					<input id="appointment-time" type="text" name="time" placeholder="10:00">
+					<input type="text" name="time" placeholder="10:00" id="appointment-time">
 				</p>
 					
 				<p class="appointment-item">
 					<label for="appointment-name"></label>Ваше имя
-					<input id="appointment-text" type="text" name="name" placeholder="Борода">
+					<input type="text" name="name" placeholder="Борода" id="appointment-text">
 				</p>
 					
 				<p class="appointment-item">
 					<label for="appointment-phone"></label>Телефон
-					<input id="appointment-tel" type="tel" name="phone" placeholder="+7 123 456-78-90" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+					<input type="tel" name="phone" placeholder="+7 123 456-78-90" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" id="appointment-tel" required>
 				</p>	
 				<button type="submit" value="Отправить">
 			</form>
@@ -146,11 +146,11 @@
 		<form class="login-form" action="#" method="post">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
-				<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+				<input class="login-icon-user" type="text" name="login" placeholder="Логин" id="user-login">
 			</p>
 			<p>
 				<label class="visually-hidden" for="user-password">Пароль</label>
-				<input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Пароль">
+				<input class="login-icon-password" type="password" name="password" placeholder="Пароль" id="login-password">
 			</p>		
 			<p class="login-password-info"></p>
 				<label class="login-checkbox">
