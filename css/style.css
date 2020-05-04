@@ -1,5 +1,5 @@
 body {
-    /* margin: 0;
+    margin: 0;
     padding: 0;
     
     font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -12,5 +12,35 @@ body {
     background-color: #000000;
     background-image: url("../img/background.jpg");
     background-position: top center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat; 
 }
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #000000; 
+} 
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a:link,
+.site-navigation a:visited {
+    color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: ;
+}     
