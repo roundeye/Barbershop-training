@@ -1,0 +1,3 @@
+body, header, footer, section, aside, div, p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, figcaption, form, nav, a, main {
+    outline: 1px solid red;
+}
